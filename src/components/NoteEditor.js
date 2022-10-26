@@ -10,7 +10,7 @@ import {
 
 function NoteEditor({noteToShow,onChangeForm,onEditForm,backToEdit}) {
   
-const shareUrl="https://wonderful-fudge-962804.netlify.app"
+const shareUrl="https://phase2-react-project-notes.netlify.app/"
 
 function onInputChange(e){
    onChangeForm(e.target.name,e.target.value);
