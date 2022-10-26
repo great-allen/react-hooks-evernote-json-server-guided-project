@@ -10,7 +10,7 @@ import {
 
 function NoteEditor({noteToShow,onChangeForm,onEditForm,backToEdit}) {
   
-const shareUrl="https://www.npmjs.com/package/react-share"
+const shareUrl="https://wonderful-fudge-962804.netlify.app"
 
 function onInputChange(e){
    onChangeForm(e.target.name,e.target.value);
