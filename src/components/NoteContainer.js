@@ -17,7 +17,7 @@ function NoteContainer() {
   
   useEffect(()=>{
     fetch("https://notes-api-1670.onrender.com/notes")
-    .then(r=>r.json()).then(setNotes)
+    .then(r=>r.json()).then(setNotes).catch(err=>alert(err))
   },[])
 
   function addNote(noteClicked){

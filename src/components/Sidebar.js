@@ -16,7 +16,7 @@ function Sidebar({notes,onAddNote,addToSideBar}) {
       })
     })
     .then(r=>r.json())
-    .then(addToSideBar)
+    .then(addToSideBar).catch(err=>alert(err))
   }
 
   return (

@@ -27,7 +27,7 @@ function onInputChange(e){
       body:JSON.stringify(noteToShow)
     })
     .then(r=>r.json())
-    .then(onEditForm)
+    .then(onEditForm).catch(err=>alert(err))
   }
 
   function handleClick(){
