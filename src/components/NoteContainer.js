@@ -14,11 +14,13 @@ function NoteContainer() {
   const[searchTerm,setSearchTerm]=useState("")
   const[sortby,setSortBy]=useState("ALL")
   
-  
+  function firstRender(){
   useEffect(()=>{
     fetch("https://notes-api-1670.onrender.com/notes")
     .then(r=>r.json()).then(setNotes).catch(err=>alert(err))
   },[])
+  } 
+   firstRender();
 
   function addNote(noteClicked){
     const noteToClicked={...noteClicked,isClicked:true,isEdited:false};
